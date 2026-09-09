@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("----------- Penilaian Ujian (misal) ----------- \n\n");
+
+    int nilai;
+
+    printf("Masukkan nilai kamu = ");
+    scanf("%d", &nilai);
+
+    printf("\n\n");
+
+    if(nilai <= 40)
+    {
+        printf("Kamu memperoleh nilai E \n");
+    }
+    else if(nilai > 40 && nilai <=55)
+    {
+        printf("Kamu memperoleh nilai D \n");
+    }
+    else if(nilai > 55 && nilai <=60)
+    {
+        printf("Kamu memperoleh nilai C \n");
+    }
+    else if(nilai > 60 && nilai <=80)
+    {
+        printf("Kamu memperoleh nilai B \n");
+    }
+    else if(nilai > 80 && nilai <=100)
+    {
+        printf("Kamu memperoleh nilai A \n");
+    }
+    else
+    {
+        printf("Invalid");
+    }
+}
