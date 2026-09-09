@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    printf("----------- Kalkulator Mini ----------- \n\n");
+
+    int pilihan, bil_1, bil_2, hasil;
+
+    printf("Masukkan bilangan pertama = ");
+    scanf("%d", &bil_1);
+    printf("Masukkan bilangan kedua = ");
+    scanf("%d", &bil_2);
+    
+    printf("\n");
+    
+    printf("Menu Matematika:\n 1.Penjumlahan\n 2.Pengurangan\n 3.Perkalian\n 4.Pembagian\n\n");
+    printf("Masukkan pilihan anda = ");
+    scanf("%d", &pilihan);
+
+    printf("\n\n");
+
+    //penjumlahan = 1;
+    //pengurangan = 2;
+    //perkalian = 3;
+    //pembagian = 4;
+    
+    if(pilihan == 1)
+    {
+        hasil = bil_1 + bil_2;
+        printf("Hasil operasi tersebut = %d", hasil);
+    }
+    else if(pilihan == 2)
+    {
+        hasil = bil_1 - bil_2;
+        printf("Hasil operasi tersebut = %d", hasil);
+    }
+    else if(pilihan == 3)
+    {
+        hasil = bil_1 * bil_2;
+        printf("Hasil operasi tersebut = %d", hasil);
+    }
+    else if(pilihan == 4)
+    {
+        hasil = bil_1 / bil_2;
+        printf("Hasil operasi tersebut = %d", hasil);
+    }
+    else 
+    {
+        printf("Pilihan tidak valid lah pintar!");
+    }
+}
